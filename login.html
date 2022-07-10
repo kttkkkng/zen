@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue@3.0.2"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -17,9 +17,12 @@
         <div class="plain">
             <div class="panel">
                 <div class="buttons">
-                    <button @click="goToLogin()">เข้าสู่ระบบ</button>
+                    <p style="text-align: center; font-size: 25px;">เข้าสู่ระบบ</p>
+                    <input type="text" placeholder="ชื่อผู้ใช้" style="font-size: 25px; padding: 10px; width: 100%; margin: 5px;">
                     <br>
-                    <button @click="goToRegister()">ลงทะเบียนใหม่</button>
+                    <input type="password" placeholder="รหัสผ่าน" style="font-size: 25px; padding: 10px; width: 100%; margin: 5px;">
+                    <br>
+                    <button class="submit_button" style="margin-top: 15px; width: 100%; font-size: 15px;">submit</button>
                 </div>
             </div>
         </div>

@@ -6,8 +6,11 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        register () {
-            console.log(this.username, this.password);
+        goToLogin () {
+            window.location = "/login.html";
+        },
+        goToRegister () {
+            window.location = "/register.html";
         }
     }
 });
