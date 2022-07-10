@@ -14,10 +14,65 @@ button {
     font-size: 30px;
 }
 
-.panel {
-    width: 100%;
-    position: fixed;
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: aqua;
+    height: 20%;
+    position: relative;
+}
+
+.name {
+    float: left;
+    margin: 0;
+    position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
-    text-align: center;
+    left: 5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sign_in {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    -ms-transform: translate(-110%, -50%);
+    transform: translate(-110%, -50%);
+}
+
+.plain {
+    background-color: aquamarine;
+    height: 100%;
+    position: relative;
+}
+
+.panel {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.panel button {
+    width: 100%;
+}
+
+.buttons {
+    margin: 0;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
